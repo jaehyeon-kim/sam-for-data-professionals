@@ -1,0 +1,6 @@
+-r transform/requirements.txt
+pytest
+pytest-cov
+black
+ipdb
+boto3
