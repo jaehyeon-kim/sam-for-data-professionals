@@ -26,7 +26,7 @@ def check_fields(df: pd.DataFrame, schema: dict):
 def check_data_types(df: pd.DataFrame, schema: dict):
     dtypes = df.dtypes.to_dict()
     for field in schema["fields"]:
-        match_type = "object" if field["name"] == "name" else field["type"]
+        match_type = "object" if field["type"] == "string" else field["type"]
         if re.search(match_type, str(dtypes[field["name"]])) is None:
             raise Exception(f"incorrect column type - {field['name']}")
 
