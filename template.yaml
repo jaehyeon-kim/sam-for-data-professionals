@@ -14,7 +14,7 @@ Resources:
   FastAvro:
     Type: AWS::Serverless::LayerVersion
     Properties:
-      LayerName: fastavro-layer-py3-8
+      LayerName: fastavro-layer-py3
       ContentUri: fastavro/
       CompatibleRuntimes:
         - python3.7
