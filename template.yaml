@@ -50,7 +50,7 @@ Resources:
 
 Outputs:
   FastAvro:
-    Description: "ARN of fastavro-layer-py3-8"
+    Description: "ARN of fastavro-layer-py3"
     Value: !Ref FastAvro
   TransformFunction:
     Description: "Transform Lambda Function ARN"
